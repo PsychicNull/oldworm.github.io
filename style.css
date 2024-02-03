@@ -27,7 +27,7 @@ body{
 
 h1{
     font-family: "Overpass", sans-serif;
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
 
     padding: 0;
@@ -181,4 +181,9 @@ img{
         transform: translate(-50%, -50%);
     }
 
+    .small{
+        display: block;
+        width: 50% !important;
+        height: auto;
+    }
 }
