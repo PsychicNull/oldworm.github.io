@@ -14,30 +14,42 @@ body{
 }
 
 .container{
+    display: block;
     width: 60%; 
     height: 100%; 
-    
-    padding: 30px;
-    
-    display: block;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1{
-    font-family: "articulat-cf", sans-serif;
+    font-family: "Overpass", sans-serif;
     font-weight: 600;
     font-style: normal;
+
+    padding: 0;
+    margin: 30px 0 0 0;
 }
 
 h2{
-    font-family: "articulat-cf", sans-serif;
-    font-weight: 400;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
     font-style: italic;
+
+    padding: 15px 0 0 0;
+    margin: 0;
 }
 
 p{
-    font-family: "articulat-cf", sans-serif;
+    font-family: "Overpass", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    padding: 10px 0 10px 0;
+    margin: 0;
 }
 
 hr{
@@ -54,12 +66,119 @@ hr{
     margin: 0;
 }
 
+.work-frame{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
 
+    border: solid 1px black;
+    border-radius: 10px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.work-content{
+    padding: 15px;
+}
+
+
+img{
+    display: block;
+    
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    background-image: url('./images/lazy_load_00.png'); /* Small placeholder image */
+    background-size: cover;
+    background-color: #b98202;
+}
+
+.small{
+    display: block;
+    width: 347px !important;
+    height: auto;
+}
+
+.credits{
+    margin: 0;
+    padding: 5px 0 15px 0;
+}
+
+
+/************************/
+/******* LIGHTBOX *******/
+/************************/
+.lightbox-trigger{
+    cursor: pointer;
+}
+
+#lightbox {
+    position: fixed; /* Fixed position to cover the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95); /* Semi-transparent background */
+    z-index: 2000; /* High z-index to be on top of other content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox img {
+    max-width: 100%; /* Max width of the image */
+    max-height: 100%; /* Max height of the image */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #f6f8ff;
+    cursor: pointer;
+
+    font-family: "Overpass", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#close-lightbox:hover {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fcb001;
+    cursor: pointer;
+
+    font-family: "Overpass", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+/************************/
+/************************/
+
+
+/************************/
+/******** MOBILE ********/
+/************************/
 @media screen and (max-width: 1200px) {
     .container{
-        width: auto; 
-        height: 100%; 
-        padding: 30px;
         display: block;
+        width: 90%; 
+        height: 100%; 
+
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
 }
