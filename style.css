@@ -71,30 +71,23 @@ hr{
     position: relative;
     width: 100%;
     height: auto;
-
-    border: solid 1px black;
-    border-radius: 10px;
-
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
 }
 
 .work-content{
-    padding: 15px;
+    padding: 0;
 }
 
 
 img{
     display: block;
-    
     width: 100%;
     height: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-    background-image: url('./images/lazy_load_00.png'); /* Small placeholder image */
+    background-image: url('./images/lazy_load_00.png');
     background-size: cover;
     background-color: #b98202;
+    border: solid 1px black;
 }
 
 .small{
@@ -107,6 +100,251 @@ img{
     margin: 0;
     padding: 5px 0 15px 0;
 }
+
+
+/*** ACEDIA OF ARCADIA GALLERY ***/
+.gallery_01{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery__img {
+    display: block;
+    position: absolute;
+    object-fit: cover;
+}
+
+.gallery-item-01 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-02 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-03 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+/*** BRAIN TEASER ***/
+.gallery_02{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item-04 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-05 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-06 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery-item-07 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+/*** WANDERING SCOPE ***/
+.gallery_03{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item-08 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-09 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-10 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery-item-11 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+/*** MEDIUM RED ***/
+.gallery_04{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item-12 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-13 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-14 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+/*** DREAMFALL ***/
+.gallery_05{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item-15 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-16 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+/*** ALL IT DOES IS TURN ***/
+.gallery_06{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item-17 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-18 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-19 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery-item-20 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+/*** SENTENCE ***/
+.gallery_07{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item-21 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-item-22 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-item-23 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 
 
 /************************/
@@ -186,4 +424,113 @@ img{
         width: 50% !important;
         height: auto;
     }
+
+    /*** BRAIN TEASER ***/
+    .gallery_02{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin-top: 15px;
+    }
+
+    .gallery-item-04 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .gallery-item-05 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .gallery-item-06 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .gallery-item-07 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+
+    /*** WANDERING SCOPE ***/
+    .gallery_03{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin-top: 15px;
+    }
+
+    .gallery-item-08 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .gallery-item-09 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .gallery-item-10 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .gallery-item-11 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    /*** SENTENCE ***/
+    .gallery_07{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin-top: 15px;
+    }
+
+    .gallery-item-21 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .gallery-item-22 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .gallery-item-23 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
 }
